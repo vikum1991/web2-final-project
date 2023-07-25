@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="(min-width: 640px)" href="all_pc.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="all_smp.css">
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="flexslider.css" rel="stylesheet">
+<script src="jquery.flexslider-min.js"></script>
+<script>
+  $(function(){
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+</script>
+</head>
+
+<!--Navigation Bar and Scroll Pic-->
+<body style="background-image:url(bg050.gif);">
+    <div id="pagebody" style="height: 1200px;">
+        <header>
+        <div class="flexslider" style="border-color:#CFC;;">
+          <ul class="slides">
+            <li><img src="img/1.jpg" /></li>
+            <li><img src="img/2.jpg" /></li>
+            <li><img src="img/3.jpg" /></li>
+            <li><img src="img/4.jpg" /></li>
+            <li><img src="img/5.jpg" /></li>
+            <li><img src="img/6.jpg" /></li>
+            <li><img src="img/7.jpg" /></li>
+            <li><img src="img/8.jpg" /></li>
+          </ul>
+        </div>
+    
+        <div class="topnav">
+            <div class="topnavde"><a href="index.html"><b>Top page</b></a></div>
+                <div class="topnavde"><a href="js1.html"><b>Score</b></a></div>
+                <div class="topnavde"><a href="js2.html"><b>Shop</b></a></div>
+                <div class="topnavde"><a href="js3.html"><b>JS World</b></a></div>
+                <div class="topnavde"><a href="js4.html"><b>Form</b></a></div>
+                <div class="topnavde"><a href="js5.html"><b>Map</b></a></div>
+                <div class="topnavde"><a href="js6.html"><b>Anima</b></a></div>
+        </div>
+        
+        </header>
+
+        <!--Container-->
+
+        <div class="container" style="height: 600px;">
+            <h1>Membership Application form</h1>
+
+            <div class="row">
+              <div>
+                <form action="index.html" method="post">
+                  <h1> Your Basic Info </h1>
+                  
+                  <fieldset>
+                            
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+                    <button>click the button</button>
+                  
+                    <label for="email">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+                    <button>click the button</button>
+                 
+                    <!-- <label for="password">Password:</label>
+                    <input type="password" id="password"       name="user_password"> -->
+                    <br><br>
+                    <label>Please select your favorite color</label>
+                    <br>
+                  
+                    <input type="radio" id="under_13" name="user_color">
+                    <label class="light">Brown</label>
+                    <br>
+                    <input type="radio" id="over_13" name="user_color">
+                    <label class="light">Black</label>
+                    <br>
+                    <input type="radio" id="over_13" name="user_color">
+                    <label class="light">Blue</label>
+          
+                    <br><br>
+                    <button>click the button</button>
+                    <br><br>
+          
+                    <label>Please select the Subject Which You are interested</label><br>
+                    <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Computer Science</label>
+                    <br>
+                    <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Statistic</label>
+                    <br>
+                    <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Mathematics</label>
+                    <br>
+                    <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Physics</label>
+          
+                    <br><br>
+                    <button>Choose the Subject you have learned</button>
+                    <br><br>
+          
+                    <label>Choose the University</label>
+                    <br>
+                    <select id="school">
+                      <option value="KCGI">KCGI</option>
+                      <option value="Kyodai">Kyoto</option>
+                      <option value="Todai">Osaka</option>
+                      <option value="Doshisha">Hokaido</option>
+                    </select>
+                    <br>
+                    <label>Choose the Sport which you can</label>
+                    <br>
+                    <select id="intrument">
+                      <option value="guitar">Swiming</option>
+                      <option value="drums">Boxing</option>
+                      <option value="keyboard">Athletics</option>
+                      <option value="bass">Foot ball</option>
+                    </select>
+          
+                    <br><br>
+                    <input type="reset" value="Reset">
+                    <br><br>
+                    
+                  </fieldset>
+                  
+                 </form>
+                  </div>
+                </div>
+
+        </div>
+        <!--End Container-->
+    
+        <!--Footer Section-->
+
+        <footer>Copyright (C) 2018s copyrights. KCGI.All Rights Reserved.</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,35 @@
+body{
+	text-align:center;
+}
+
+#pagebody{
+	width:700px;
+	height:550px;
+	margin:0 auto;
+	padding:10px;
+	border:0px solid green;
+	background-color:lightcyan;	
+}
+
+#submenu{
+	width:200px;
+	height:390px;
+	margin:10px;
+	padding:10px;
+	border:2px solid pink;
+	float:left;
+	background-color:lightgreen;	
+}
+
+A{text-decoration:none;}
+
+#content{
+	width:400px;
+	height:390px;
+	margin:10px;
+	padding:10px;
+	border:2px solid pink;
+	float:right;
+	background-color:pink;	
+}
+

@@ -1,0 +1,140 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="(min-width: 640px)" href="all_pc.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="all_smp.css">
+
+<head>
+
+  <style>
+    #mymap {
+        width: 600px;
+        height: 300px;
+    }
+
+    #section1 {
+     color: rgb(7, 7, 7);
+     font-size: 20px;
+    }
+
+
+
+
+</style>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="flexslider.css" rel="stylesheet">
+<script src="jquery.flexslider-min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script>
+  $(function(){
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+
+  function initialize() {
+            var map = new google.maps.Map(document.getElementById('mymap'), {
+                zoom: 11,
+                center: { lat: 5.9496, lng: 80.5469 },
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+            var marker1 = new google.maps.Marker({
+                position: new google.maps.LatLng(6.0251, 80.4959),
+                map: map,
+                title: "Telijjawila"
+            });
+
+            var marker2 = new google.maps.Marker({
+                position: new google.maps.LatLng(5.9535, 80.5348),
+                map: map,
+                title: "Rahula College"
+            });
+
+            var infoWindow1 = new google.maps.InfoWindow({
+                content: "Telijjawila is a major city in Matara town, on the southern coast of Southern Province."
+            });
+
+            var infoWindow2 = new google.maps.InfoWindow({
+                content: "Rahula College is a boys' school in Sri Lanka, located in Matara district. Though it was originally a private Buddhist school, now it is run by the Government of Sri Lanka as a National School"
+            });
+
+            google.maps.event.addListener(marker1,"click", function() {
+                infoWindow1.open(map, marker1);
+            });
+
+            google.maps.event.addListener(marker2,"click", function() {
+                infoWindow2.open(map, marker2);
+            });
+
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+</head>
+
+<!--Navigation Bar and Scroll Pic-->
+<body style="background-image:url(bg050.gif);">
+    <div id="pagebody" style="height: 1200px;">
+        <header>
+        <div class="flexslider" style="border-color:#CFC;;">
+          <ul class="slides">
+            <li><img src="img/1.jpg" /></li>
+            <li><img src="img/2.jpg" /></li>
+            <li><img src="img/3.jpg" /></li>
+            <li><img src="img/4.jpg" /></li>
+            <li><img src="img/5.jpg" /></li>
+            <li><img src="img/6.jpg" /></li>
+            <li><img src="img/7.jpg" /></li>
+            <li><img src="img/8.jpg" /></li>
+          </ul>
+        </div>
+    
+        <div class="topnav">
+            <div class="topnavde"><a href="index.html"><b>Top page</b></a></div>
+                <div class="topnavde"><a href="js1.html"><b>Score</b></a></div>
+                <div class="topnavde"><a href="js2.html"><b>Shop</b></a></div>
+                <div class="topnavde"><a href="js3.html"><b>JS World</b></a></div>
+                <div class="topnavde"><a href="js4.html"><b>Form</b></a></div>
+                <div class="topnavde"><a href="js5.html"><b>Map</b></a></div>
+                <div class="topnavde"><a href="js6.html"><b>Anima</b></a></div>
+        </div>
+        
+        </header>
+
+        <!--Container-->
+
+        <div class="container">
+            <h1>Map</h1>
+            <div id="section1">
+              <h3>About My Home town and school</h3>
+              <p>This Map Show My Home town And School</p>
+              <p>My Home Town is Tellijjawila</p>
+              <p>My School is Rahula College</p>
+          <div id="mymap">
+          </div>
+        </div>
+      
+        <!--End Container-->
+    
+        <!--Footer Section-->
+
+        <footer>Copyright (C) 2018s copyrights. KCGI.All Rights Reserved.</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    

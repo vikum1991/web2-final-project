@@ -1,0 +1,154 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="(min-width: 640px)" href="all_pc.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="all_smp.css">
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="flexslider.css" rel="stylesheet">
+<script src="jquery.flexslider-min.js"></script>
+<script>
+  $(function(){
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+</script>
+</head>
+
+<!--Navigation Bar and Scroll Pic-->
+<body style="background-image:url(bg050.gif);">
+    <div id="pagebody" style="height: 1200px;">
+        <header>
+        <div class="flexslider" style="border-color:#CFC;;">
+          <ul class="slides">
+            <li><img src="img/1.jpg" /></li>
+            <li><img src="img/2.jpg" /></li>
+            <li><img src="img/3.jpg" /></li>
+            <li><img src="img/4.jpg" /></li>
+            <li><img src="img/5.jpg" /></li>
+            <li><img src="img/6.jpg" /></li>
+            <li><img src="img/7.jpg" /></li>
+            <li><img src="img/8.jpg" /></li>
+          </ul>
+        </div>
+    
+        <div class="topnav">
+            <div class="topnavde"><a href="index.html"><b>Top page</b></a></div>
+                <div class="topnavde"><a href="js1.html"><b>Score</b></a></div>
+                <div class="topnavde"><a href="js2.html"><b>Shop</b></a></div>
+                <div class="topnavde"><a href="js3.html"><b>JS World</b></a></div>
+                <div class="topnavde"><a href="js4.html"><b>Form</b></a></div>
+                <div class="topnavde"><a href="js5.html"><b>Map</b></a></div>
+                <div class="topnavde"><a href="js6.html"><b>Anima</b></a></div>
+        </div>
+        
+        </header>
+
+        <!--Container-->
+
+        <div class="container" style="height: 600px;">
+            <h1>Score</h1>
+
+            <script>
+              ////Declare and initializaion Array  and Display Array element  
+              student=[["Wang",80],["Chen",75],["Zhoo",92],["Liu",60],["Yamamoto",91],["Tanaka",82]];
+      
+              document.write("There are six students. Their are follows"+"</b>");
+              document.write("</br>");
+      
+                  for(i=0;i<6;i++){
+                      for(j=0;j<2;j++){
+                      document.write(student[i][j]);
+                      }
+                          document.write("</br>");
+      
+      
+                  }
+      
+                  document.write("</br>");
+                  document.write("</br>");
+      
+                  //Seperate the Student who get the A pass
+                  document.write("The following students are students who can get A </br>");
+      
+                  for(i=0;i<6;i++){
+                      if(student[i][1]>90){
+                          document.write(student[i]+",</br>");
+      
+                      }
+                  }
+      
+                  //Total score and Average Score
+      
+                  let score=0;
+                  for(i=0;i<6;i++){
+                      score+=student[i][1];
+                  }
+      
+                  document.write("</br>");
+                  document.write("</br>");
+      
+                  document.write("Total score is"+" "+score+"</br>");
+                  document.write("The Average score is"+" "+score/6+"</br>");
+                   
+                  //Sorting in Decending oder
+      
+                  for(i=0;i<6;i++){
+                      for(j=i+1;j<6;j++){
+                              if(student[i][1]<student[j][1]){
+                                   x=student[i];
+                                  student[i]=student[j];
+                                  student[j]=x;
+                              }
+                              
+      
+                          
+                  }
+                 
+      
+              }
+      
+              document.write("</br>");
+              document.write("</br>");
+      
+             
+              document.write("Sort Score in decending oder</br>");
+      
+              for(i=0;i<6;i++){
+                  for(j=0;j<2;j++){
+                      document.write(student[i][j]);
+                  }
+                 document.write("</br>");
+      }
+                 
+      
+      
+      
+      
+              
+          </script>
+
+        </div>
+        <!--End Container-->
+    
+        <!--Footer Section-->
+
+        <footer>Copyright (C) 2018s copyrights. KCGI.All Rights Reserved.</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    

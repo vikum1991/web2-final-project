@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="(min-width: 640px)" href="all_pc.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="all_smp.css">
+<style>
+   .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="flexslider.css" rel="stylesheet">
+<script src="jquery.flexslider-min.js"></script>
+<script>
+  $(function(){
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+</script>
+</head>
+
+<!--Navigation Bar and Scroll Pic-->
+<body style="background-image:url(bg050.gif);">
+    <div id="pagebody" style="height: 1200px;">
+        <header>
+        <div class="flexslider" style="border-color:#CFC;;">
+          <ul class="slides">
+            <li><img src="img/1.jpg" /></li>
+            <li><img src="img/2.jpg" /></li>
+            <li><img src="img/3.jpg" /></li>
+            <li><img src="img/4.jpg" /></li>
+            <li><img src="img/5.jpg" /></li>
+            <li><img src="img/6.jpg" /></li>
+            <li><img src="img/7.jpg" /></li>
+            <li><img src="img/8.jpg" /></li>
+          </ul>
+        </div>
+    
+        <div class="topnav">
+            <div class="topnavde"><a href="index.html"><b>Top page</b></a></div>
+                <div class="topnavde"><a href="js1.html"><b>Score</b></a></div>
+                <div class="topnavde"><a href="js2.html"><b>Shop</b></a></div>
+                <div class="topnavde"><a href="js3.html"><b>JS World</b></a></div>
+                <div class="topnavde"><a href="js4.html"><b>Form</b></a></div>
+                <div class="topnavde"><a href="js5.html"><b>Map</b></a></div>
+                <div class="topnavde"><a href="js6.html"><b>Anima</b></a></div>
+        </div>
+        
+        </header>
+
+        <!--Container-->
+
+        <div class="container" style="height: 600px;">
+            <div class="card">
+              <h1>Top Page</h1>
+              <p>Vikum Pramilan, a diligent student (M23W0142), presents the pinnacle of Web Programming 2 expertise in this final project.<br>
+              <a href="#" class="read-more">Read More</a></p>
+                  
+                <div class="full-content" style="display: none;">  
+                  <p> Employing HTML, CSS, and JavaScript,This Project encompasses five dynamic pages: Top, Score, Shop, JS World, Form, and Map Animation.
+                          </p>
+                  </div>
+              </div>
+
+        </div>
+        <!--End Container-->
+    
+        <!--Footer Section-->
+
+        <footer>Copyright (C) 2018s copyrights. KCGI.All Rights Reserved.</footer>
+</div>
+
+<script>
+  // Get all the "Read More" links with the class "read-more"
+  var readMoreLinks = document.querySelectorAll(".read-more");
+
+  // Iterate through each link and attach a click event listener
+  readMoreLinks.forEach(function(link) {
+      link.addEventListener("click", function(e) {
+          e.preventDefault(); // Prevent the default link behavior
+
+          // Find the parent card element
+          var card = link.closest(".card");
+
+          // Toggle the visibility of the full-content div
+          var fullContent = card.querySelector(".full-content");
+          fullContent.style.display = (fullContent.style.display === "none") ? "block" : "none";
+      });
+  });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    
